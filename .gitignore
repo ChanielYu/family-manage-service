@@ -112,3 +112,5 @@ Thumbs.db
 
 # Turbo
 .turbo
+/generated/prisma
+

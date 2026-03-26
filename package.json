@@ -2,24 +2,34 @@
   "name": "node-service",
   "version": "1.0.0",
   "description": "A Node.js service for handling various tasks.",
-  "main": "src/index.js",
+  "main": "pages/index.js",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:seed": "prisma db seed"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/adapter-better-sqlite3": "^7.5.0",
+    "@prisma/client": "^6.19.2",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.3.1",
     "express": "^4.17.1",
     "next": "^15.5.14",
+    "next-auth": "^4.24.13",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
+    "prisma": "^6.19.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
 }
